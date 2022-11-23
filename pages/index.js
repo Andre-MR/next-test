@@ -7,5 +7,6 @@ export async function getStaticProps(context) {
     props: {
       date: new Date().toISOString(),
     },
+    revalidate: 60,
   };
 }
